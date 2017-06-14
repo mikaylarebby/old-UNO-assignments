@@ -1,0 +1,5 @@
+1. What are the advantages of utilizing the concepts of inheritance and polymorphism in this program?
+
+In this program, using polymorphism and inheritence saves a lot of time and lines of code. Without it, I would've had to repeat the same methods over and over, and having a superclass like "Animal" or "Food" makes it a lot quicker to implement new items into the game. 
+
+2. My animal subclass is Wolf. What sets the Wolf apart is he has a 1 in 30 chance of it being a full-moon, in which case he can "How at the Moon" for an extra 50 happiness. He likes meat and fish more than the other food types. And to integrate it into the game, all I would have to do is add one more spot in my cages array and create a new instance of Wolf. 

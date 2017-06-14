@@ -1,0 +1,84 @@
+1. The assignment mentions there is an efficiency issue with the way we are dissecting the candidate
+DNA strand into substrings. There is another efficiency issue with this implementation,
+having to do with redundant calculations. What is that issue and describe how we may resolve it.
+
+I feel that the issue is having the charNumericValue method, I made the method but didn't really use it. Instead I just
+implemented the base 4 numeric system in my string hash method. It checks for the value and hashes it accordingly. A lot of time
+and memory would be wasted to have to call the Numeric Value method on every single char in a string before you can even hash it.
+
+2. What is the purpose of the “Rolling Hash”, in the Rabin-Karp algorithm?
+
+The purpose of rolling hash is to help automate the process of hashing subsequent substrings one after another. Like if you were to hash
+the word "everything" in 2 char parts, you'd hash ev, ve, er, ry, etc.. There is a but of repetion and it can save time to use your previous
+hash to help hash the next word.
+
+3. Create six of your own test case DNA master and candidate strands, some valid, some invalid.
+What were your test cases and their results?
+
+//CASE 1 -
+Enter molecule string for master DNA strand: 
+GCTCGTCGTA 
+Enter molecule string for comparison or EXIT to quit: 
+GTCA
+Enter molecule string for comparison or EXIT to quit: 
+exit
+DNA Strand GCTCGTCGTA
+Best Match Strand: GTCA
+Matching Substring: GTC
+
+//CASE 2
+Enter molecule string for master DNA strand: 
+GTCAGTCAAAAT
+Enter molecule string for comparison or EXIT to quit: 
+CAGH
+
+Recursion.Exception.InvalidDNAStrandException: Invalid molecule: H,strand ignored.
+Enter molecule string for comparison or EXIT to quit: 
+CAAAA
+Enter molecule string for comparison or EXIT to quit: 
+Exit
+DNA Strand GTCAGTCAAAAT
+Best Match Strand: CAAAA
+Matching Substring: CAAAA
+
+//CASE 3
+Enter molecule string for master DNA strand: 
+AGAGAGAAAA
+Enter molecule string for comparison or EXIT to quit: 
+T
+Enter molecule string for comparison or EXIT to quit: 
+Exit
+DNA Strand AGAGAGAAAA
+No match found
+
+
+//CASE 4
+Enter molecule string for master DNA strand: 
+GATCCATCGATGCTAGCTATGCATCG
+Recursion.Exception.InvalidDNAStrandException: Strand too long, try again.
+
+
+//CASE 5
+Enter molecule string for master DNA strand: 
+GTCGTCGTCGTC
+Enter molecule string for comparison or EXIT to quit: 
+A
+Enter molecule string for comparison or EXIT to quit: 
+Exit
+DNA Strand GTCGTCGTCGTC
+No match found
+
+//Case 6
+Enter molecule string for master DNA strand: 
+GTCGATCGA
+Enter molecule string for comparison or EXIT to quit: 
+GTCA
+Enter molecule string for comparison or EXIT to quit: 
+ATCGCAT
+Enter molecule string for comparison or EXIT to quit: 
+GCAT
+Enter molecule string for comparison or EXIT to quit: 
+exit
+DNA Strand GTCGATCGA
+Best Match Strand: ATCGCAT
+Matching Substring: ATCG

@@ -1,0 +1,13 @@
+I FORGOT TO ASK IN CLASS - How the heck do we get an int to print out as "Not Set"? I got help in the learning lab on 9/13/16 and they didn't have a solution for me. You can't assign a string value to an int so I don't know how we were supposed to go about that in our toString method. 
+
+
+
+1.) In creating these classes what advantage to we gain by utilizing the Object Oriented Programming concept of Inheritance?
+
+    Inheritance makes code cleaner and more reusable. It also makes debugging much easier because if there is an issue with the code you only need to fix it in one or two places, rather than every single place that code was used. Once the code is initially set up and working, making changes and updates in the future will be much more pain-free and less time consuming. 
+
+2.) Come up with your own hierarchy design that would benefit from Inheritance. Your hierarchy must have at least 3 levels and be made up of at least 7 classes. You do not have to write any code. Describe the classes and how they would relate to each other as well as some of the data members and methods the classes would have. Explain why your hierarchy makes sense. Your design could be something that relates to your particular field of study or hobbies. Do not use examples used in class or discussed in the text book.
+
+    My heiarchy would be a database for a car lot. The first and most basic level would be the "Vehicle" object. It would have a few basic values, maybe like Price, VIN #, and Manufactuer. 
+    The second level would split vehicles into "New" and "Pre-owned" types. The pre-owed type may get a data type of mileage, car history, and title status (Clean, salvaged, rebuilt, etc). The new car may have data types like "Features" or "Year".
+    The third level would split vehicles up by type, is it a Truck, SUV, Coupe, or Sedan? Each Vehicle type would recieve more unique values. If it is a truck, how big is the bed, how many HP? If it is a Sedan or Coupe, is it front-wheel or rear-wheel drive? If it is a SUV, how many people does it seat? 

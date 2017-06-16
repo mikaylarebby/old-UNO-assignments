@@ -1,0 +1,17 @@
+1. What is the advantage of using LinkedLists instead of arrays for the edge and vertices list?
+    
+ The main advantage is that linked lists have the advantage of not wasting space in the same way that traditional arrays or even array lists do. This is a large advantage for programs where you the amount of input is entirely up to the user. 
+
+2. It is possible for Graphs to have negative edge weights, would Dijkstra’s Algorithm still work with such Graphs?
+
+    You'd maybe have to refractor it a little bit..But I don't see why it wouldn
+'t work. The distance between -7 and -1 is the same as 7 and 1. I guess it depends what you are using it for, but for most cases I would say that yes it still works.  
+
+3. What would a potential use for Dijkstra’s Algorithm be?
+    
+    A potential use would be to find the shortest possible route to a destination. (GPS). I mean, google maps does this already so it's not anything new. But out of the 4-5 different ways you could get from point A to point B, it's nice to know which is the shortest route. 
+
+3. Create a test case Graph of your own. You Graph must have at least 6 vertices and multiple possible paths to the destination node. In your submission directory include an image of your graph as well as a test case text file that can be redirected as discussed immediately above. What was the shortest path of your Graph?
+
+The test file is graphTest.txt, the shortest path is 4. 
+The picture is located at graph.png

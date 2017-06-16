@@ -1,0 +1,12 @@
+1. What is beneficial about our input crime data being in a CSV file?
+CSV files keep their structure and are easy to be read. CSV files are also pretty small in size as well. 
+
+2. What benefit do we get in storing the crime statistics in a Serialized file? (This is not asking the benefit of simply storing the file, but specifically as a Serialized file.)
+The advantage of using a serialized file is that the original binary representation of the values are stored.
+This makes accessing and handling the file simpler and faster. Overall a more efficient option. 
+
+3. Describe an existing or potential collection of data that could be similarly processed in your own field of study.
+Rather than crime data, I could store and use project data. I work for an advertising agency, doing back-end web development
+work. Because of the nature of the company, I often am working on dozens of sites at once. It would be nice to type in a clients
+name and recieve information like "number of current active projects", "task with the nearest deadline", and "total number of tasks remaining".
+All of this information could be easily stored in a csv file, and from my terminal, I could quickly check on all of my projects across all clients.
